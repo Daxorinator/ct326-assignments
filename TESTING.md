@@ -5,9 +5,10 @@ Red (NctBooking):
 Green (NctBooking):
 
 To-Do:
-* Add Assert messages
-* Add code comments
-* Add JavaDoc
-* Add custom exceptions
-* Add check for LocalDateTime in the past
-* Add toString() for NctBooking
+- [x] Add Assert messages
+- [ ] Add code comments
+- [ ] Add JavaDoc
+- [x] Add custom exceptions
+  - Added InvalidDateTimeException
+- [x] Add check for LocalDateTime in the past
+- [x] Add toString() for NctBooking

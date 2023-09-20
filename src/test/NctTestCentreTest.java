@@ -30,13 +30,13 @@ public class NctTestCentreTest {
 	@Test
 	public void testGetTestCentreName_ExpectTrue() {
 		String testedName = testCentre.getTestCentreName();
-		assertEquals(testedName, name);
+		assertEquals(testedName, name, "Returned TestCentreName did not match input TestCentreName");
 	}
 
 	@Test
 	void testGetTestCentreAddress_ExpectTrue() {
 		String testedAddress = testCentre.getTestCentreAddress();
-		assertEquals(testedAddress, address);
+		assertEquals(testedAddress, address, "Returned TestCentreAddress did not match input TestCentreAddress");
 	}
 
 	@Test
@@ -49,7 +49,7 @@ public class NctTestCentreTest {
 		};
 
 		LocalDateTime testedDate = testService.getBookingDateTime(testCentre);
-		assertEquals(testedDate, testDate);
+		assertEquals(testedDate, testDate, "Returned LocalDateTime for testDate did not match input LocalDate time for testDate");
 	}
 
 	@AfterAll
