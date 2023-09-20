@@ -1,3 +1,18 @@
+/**
+ * The NctTestCentreTest test class is responsible for testing each aspect of
+ * the NctTestCentre class. Notably, this test suite covers the following:
+ * <ul>
+ *     <li>That the name of an NctTestCentre can be queried</li>
+ *     <li>That the address of an NctTestcentre can be queried</li>
+ *     <li>That the NctBookingSlotWebservice correctly returns a valid LocalDateTime</li>
+ * </ul>
+ *
+ * @author Seán Kelly (21421506) {@literal <s.kelly178@universityofgalway.ie>}
+ * @version 0.1.0
+ * @since 2023-09-15
+ * @see https://github.com/Daxorinator/ct326-assignments
+ */
+
 package online.override.ct326.assignment1.test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -43,12 +58,12 @@ public class NctTestCentreTest {
 	void testGetBookingDateTime_ExpectTrue() {
 		NctBookingSlotWebservice testService = new NctBookingSlotWebservice() {
 			@Override
-			public LocalDateTime getBookingDateTime(NctTestCentre testCentre) {
+			public LocalDateTime makeBookingDateTime(NctTestCentre testCentre) {
 				return testDate;
 			}
 		};
 
-		LocalDateTime testedDate = testService.getBookingDateTime(testCentre);
+		LocalDateTime testedDate = testService.makeBookingDateTime(testCentre);
 		assertEquals(testedDate, testDate, "Returned LocalDateTime for testDate did not match input LocalDate time for testDate");
 	}
 
