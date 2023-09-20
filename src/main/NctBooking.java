@@ -9,11 +9,15 @@ public class NctBooking {
 	private LocalDateTime testTime;
 	private String bookingId;
 
+
 	public NctBooking(String plate, NctTestCentre testCentre, LocalDateTime testTime) throws InvalidDateTimeException {
 		this.vrn = plate;
 		this.testCentre = testCentre;
 		this.bookingId = makeBookingId();
 
+		// NCT bookings cannot be made for dates in the past,
+		// so the earliest possible booking time should be this instant.
+		// This allows for walk-in bookings.
 		if (testTime.isBefore(LocalDateTime.now())) {
 			throw new InvalidDateTimeException("Booking time cannot be in the past");
 		} else {
@@ -21,6 +25,7 @@ public class NctBooking {
 		}
 	}
 
+	// Grabs a time from the NctBookingSlotWebservice
 	public NctBooking(String plate, NctTestCentre testCentre) {
 		this.vrn = plate;
 		this.testCentre = testCentre;
