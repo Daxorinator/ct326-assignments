@@ -33,6 +33,7 @@ public class Main {
 			 * OK - Each line in the CSV should contain the attributes of the achievement object separated by a comma and some way to identify the player to which the achievement belongs
 			 * OK - The player class should implement a readObject() which reads back in all of the above, the list of achievements should be read from the CSV (You can use a Scanner with , as the delimiter and \n as EOL)
 			 * * Include appropriate exception handling
+			 * * Include tests for everything
 			 * * JavaDoc everything
 			 */
 

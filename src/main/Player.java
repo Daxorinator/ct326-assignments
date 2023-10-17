@@ -32,7 +32,7 @@ public class Player implements Serializable {
 		return id;
 	}
 
-	public String makeId() {
+	public static String makeId() {
 		return UUID.randomUUID().toString().split("-")[0];
 	}
 

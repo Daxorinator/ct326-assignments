@@ -17,7 +17,7 @@ public class Achievement{
 	public Achievement(String achievementName, String description, LocalDate dateOfAward) {
 		this.achievementName = achievementName;
 		this.description = description;
-		this.dateOfAward = LocalDate.now();
+		this.dateOfAward = dateOfAward;
 	}
 
 	public String getAchievementName() {
