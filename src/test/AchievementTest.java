@@ -15,7 +15,7 @@ public class AchievementTest {
 
     @BeforeAll
     void setup() {
-        testAchievement1 = new Achievement("Test Achievement", "Test Achievement Description", LocalDate.parse("2023/10/17"));
+        testAchievement1 = new Achievement("Test Achievement", "Test Achievement Description", LocalDate.parse("2023-10-17"));
         testAchievement2 = new Achievement("Test Achievement", "Test Achievement Description");
     }
 
@@ -31,12 +31,12 @@ public class AchievementTest {
 
     @Test
     void testGetDateOfAward_ExpectTrue() {
-        assertEquals(testAchievement1.getDateOfAward(), LocalDate.parse("2023/10/17"));
+        assertEquals(testAchievement1.getDateOfAward(), LocalDate.parse("2023-10-17"));
     }
 
     @Test
     void testSetDateOfAward_ExpectTrue() {
-        LocalDate newDate = LocalDate.parse("01/01/1970");
+        LocalDate newDate = LocalDate.parse("1970-01-01");
         testAchievement1.setDateOfAward(newDate);
 
         assertEquals(testAchievement1.getDateOfAward(), newDate);

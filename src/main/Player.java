@@ -71,10 +71,12 @@ public class Player implements Serializable {
 		outputStream.writeObject(this.country);
 		outputStream.writeObject(this.joinDate);
 
-		BufferedWriter writer = new BufferedWriter(new FileWriter("achievements.csv"));
+		BufferedWriter writer = new BufferedWriter(new FileWriter("achievements.csv", true));
 		for (Achievement a : this.achievements) {
-			writer.write(String.format("%s,%s,%s, %s\n", this.id, a.getAchievementName(), a.getDescription(), a.getDateOfAward()));
+			writer.write(String.format("%s,%s,%s,%s\n", this.id, a.getAchievementName(), a.getDescription(), a.getDateOfAward()));
 		}
+		writer.flush();
+		writer.close();
 	}
 
 	@Serial
@@ -91,6 +93,25 @@ public class Player implements Serializable {
 			if (this.id.equals(row[0])) {
 				this.achievements.add(new Achievement(row[1], row[2], LocalDate.parse(row[3])));
 			}
+		}
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (o == this) return true;
+		if (!(o instanceof Player)) return false;
+
+		Player p = (Player) o;
+
+		if ((this.id.equals(p.getId()))
+		 && (this.username.equals(p.getUsername()))
+		 && (this.country == p.getCountry())
+		 && (this.joinDate.equals(p.getJoinDate()))
+		 && (this.achievements.equals(p.getAchievements()))
+		) {
+			return true;
+		} else {
+			return false;
 		}
 	}
 }

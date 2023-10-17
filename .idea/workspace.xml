@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a4ff816-cff4-411c-8a4f-71c15909d2b1" name="Changes" comment="Add base classes and tests">
-      <change afterPath="$PROJECT_DIR$/src/test/AchievementTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/PlayerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/assignment3.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Achievement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Achievement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/AchievementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/AchievementTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/PlayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,13 +72,13 @@
     "git-widget-placeholder": "assignment3",
     "jdk.selected.JAVA_MODULE": "temurin-20",
     "last_directory_selection": "//wsl$/Debian/home/crash/CT326/Assignment1/src/main",
-    "last_opened_file_path": "C:/dev/CT326/ct326-assignments",
+    "last_opened_file_path": "C:/dev/CT326/ct326-assignments/src/test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel",
@@ -90,7 +90,7 @@
       <recent name="main.java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.Run Tests">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="temurin-20" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -101,16 +101,17 @@
       </method>
     </configuration>
     <configuration name="Run Tests" type="JUnit" factoryName="JUnit">
-      <module name="Assignment1" />
+      <module name="assignment3" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="temurin-20 (WSL)" />
       <option name="PACKAGE_NAME" value="online.override.ct326.assignment1.test" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="TEST_OBJECT" value="directory" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="wholeProject" />
       </option>
+      <dir value="$PROJECT_DIR$/src/test" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -175,5 +176,16 @@
     <MESSAGE value="Add InvalidDateTimeException.java; Add toString() for NctBooking.java; Update testGetBookingDateTime_ExpectTrue() in NctTestCentreTest.java" />
     <MESSAGE value="Add comments to NctBooking.java" />
     <option name="LAST_COMMIT_MESSAGE" value="Add comments to NctBooking.java" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/PlayerTest.java</url>
+          <line>147</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

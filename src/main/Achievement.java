@@ -35,4 +35,21 @@ public class Achievement{
 	public void setDateOfAward(LocalDate dateOfAward) {
 		this.dateOfAward = dateOfAward;
 	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (o == this) return true;
+		if (!(o instanceof Achievement)) return false;
+
+		Achievement a = (Achievement) o;
+
+		if ((this.achievementName.equals(a.getAchievementName()))
+		 && (this.description.equals(a.getDescription()))
+		 && (this.dateOfAward.equals(a.getDateOfAward()))
+		) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 }
