@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a4ff816-cff4-411c-8a4f-71c15909d2b1" name="Changes" comment="Add base classes and tests">
+    <list default="true" id="2a4ff816-cff4-411c-8a4f-71c15909d2b1" name="Changes" comment="Add custom equals methods; Fix testSerializable() to use .equals()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/assignment3.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Achievement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Achievement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/AchievementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/AchievementTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/PlayerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +40,7 @@
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="d327dd74-4204-4b7d-804d-b7207c47f255" />
+        <option name="accountId" value="81c58cb2-2e6d-4a46-9c32-f3b72dec7a5f" />
         <option name="url" value="https://github.com/Daxorinator/ct326-assignments.git" />
       </UrlAndAccount>
     </option>
@@ -71,14 +71,14 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "assignment3",
     "jdk.selected.JAVA_MODULE": "temurin-20",
-    "last_directory_selection": "//wsl$/Debian/home/crash/CT326/Assignment1/src/main",
+    "last_directory_selection": "C:/dev/CT326/ct326-assignments/src/main/java",
     "last_opened_file_path": "C:/dev/CT326/ct326-assignments/src/test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel",
@@ -88,6 +88,12 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="main.java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\CT326\ct326-assignments\src\main" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.Run Tests">
@@ -146,6 +152,8 @@
       <workItem from="1697541514911" duration="2739000" />
       <workItem from="1697549553825" duration="1234000" />
       <workItem from="1697551246804" duration="2682000" />
+      <workItem from="1697583725087" duration="634000" />
+      <workItem from="1697626706583" duration="8236000" />
     </task>
     <task id="LOCAL-00001" summary="Add InvalidDateTimeException.java; Add toString() for NctBooking.java; Update testGetBookingDateTime_ExpectTrue() in NctTestCentreTest.java">
       <option name="closed" value="true" />
@@ -155,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695227907069</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add custom equals methods; Fix testSerializable() to use .equals()">
+      <option name="closed" value="true" />
+      <created>1697582583873</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697582583873</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,17 +191,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add InvalidDateTimeException.java; Add toString() for NctBooking.java; Update testGetBookingDateTime_ExpectTrue() in NctTestCentreTest.java" />
     <MESSAGE value="Add comments to NctBooking.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add comments to NctBooking.java" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/PlayerTest.java</url>
-          <line>147</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Add custom equals methods; Fix testSerializable() to use .equals()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add custom equals methods; Fix testSerializable() to use .equals()" />
   </component>
 </project>

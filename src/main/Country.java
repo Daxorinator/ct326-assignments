@@ -1,5 +1,8 @@
 package main;
 
+/**
+ * An enum containing every country in the world.
+ */
 public enum Country {
 	AFGHANISTAN,
 	ALBANIA,
