@@ -1,0 +1,4 @@
+Bush,Razorblade Suitcase,covers/Razorblade_suitcase.jpg,library/bush_razorblade_suitcase.txt
+Kate Bush,Never for Ever,covers/Katebushneverforever.png,library/kate_bush_never_for_ever.txt
+Damien Dempsey,Seize the Day,covers/Damien_Dempsey_-_Seize_the_Day.jpg,library/damien_dempsey_seize_the_day.txt
+Beatles,Abbey Road,covers/Beatles_-_Abbey_Road.jpg,library/the_beatles_abbey_road.txt
