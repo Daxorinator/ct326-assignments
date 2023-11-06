@@ -5,10 +5,8 @@ import java.awt.event.*;
 import javax.swing.*;
 
 public class MusicLibrary extends JFrame implements ActionListener {
-	public MusicLibrary() {
+	public MusicLibrary(LibraryLoader loader) {
 		super("My Music Library");
-
-		LibraryLoader loader = new LibraryLoader();
 
 		Container contentPane = getContentPane();
 		contentPane.setLayout( new GridLayout(loader.getAlbums().size()/2, 2) );
@@ -18,6 +16,9 @@ public class MusicLibrary extends JFrame implements ActionListener {
 			albumButton.setVerticalTextPosition(SwingConstants.BOTTOM);
 			albumButton.setHorizontalTextPosition(SwingConstants.CENTER);
 			albumButton.addActionListener(this);
+			albumButton.setActionCommand(
+					String.valueOf(loader.getAlbums().indexOf(album))
+			);
 			contentPane.add(albumButton);
 		}
 
@@ -27,7 +28,9 @@ public class MusicLibrary extends JFrame implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		System.out.print("Action Performed " + e.ACTION_PERFORMED);
-		System.out.print(e.getActionCommand());
+		// Possible solution:
+//		Refactor this class to be a JPanel instead of a JFrame
+//		Control JPanel being pained to JFrame in Main
+//		Create a second JPanel class for TrackList
 	}
 }

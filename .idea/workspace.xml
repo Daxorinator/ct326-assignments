@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="439f642b-c470-4319-9f64-b51998c12c74" name="Changes" comment="Add PlayerTest.java; Add AchievementTest.java; Add output.png">
-      <change afterPath="$PROJECT_DIR$/src/main/Album.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/LibraryLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/MusicLibrary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/assignment4.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/MusicLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/MusicLibrary.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +86,7 @@
       <updated>1699271616744</updated>
       <workItem from="1699271618672" duration="647000" />
       <workItem from="1699272305281" duration="304000" />
-      <workItem from="1699272623325" duration="16510000" />
+      <workItem from="1699272623325" duration="20183000" />
     </task>
     <servers />
   </component>
