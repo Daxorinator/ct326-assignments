@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="439f642b-c470-4319-9f64-b51998c12c74" name="Changes" comment="Add PlayerTest.java; Add AchievementTest.java; Add output.png">
+      <change afterPath="$PROJECT_DIR$/src/main/ApplicationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/TrackList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Album.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/LibraryLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/LibraryLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/MusicLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/MusicLibrary.java" afterDir="false" />
     </list>
@@ -43,7 +47,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "assignment4",
     "jdk.selected.JAVA_MODULE": "temurin-21",
-    "last_opened_file_path": "C:/dev/CT326/ct326-assignments",
+    "last_opened_file_path": "C:/Users/daxor/OneDrive/Desktop/Test4",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -86,7 +90,8 @@
       <updated>1699271616744</updated>
       <workItem from="1699271618672" duration="647000" />
       <workItem from="1699272305281" duration="304000" />
-      <workItem from="1699272623325" duration="20183000" />
+      <workItem from="1699272623325" duration="20679000" />
+      <workItem from="1699465991111" duration="15479000" />
     </task>
     <servers />
   </component>
