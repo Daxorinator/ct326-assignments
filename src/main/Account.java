@@ -23,6 +23,7 @@ public class Account implements Serializable {
 
 	private int accnum;
 	private Money balance;
+	public final CurrencyUnit currency = CurrencyUnit.EUR;
 
 	// Date and Time account object was first created or loaded from storage
 	private LocalDateTime activated;
@@ -43,7 +44,7 @@ public class Account implements Serializable {
 	 * Make a deposit to the account of the given amount
 	 * @param amount the amount to deposit
 	 */
-	public void makeDeposit(Money amount) {	  
+	public synchronized void makeDeposit(Money amount) {
 		if(amount.isGreaterThan(Money.of(CurrencyUnit.EUR, 0)) ) {
 			balance.plus(amount);
 		}
@@ -54,7 +55,7 @@ public class Account implements Serializable {
 	 * @param amount the amount to withdraw
 	 * @throws InsufficientFundsException if the amount to withdraw is greater than the current balance
 	 */
-	public void makeWithdrawal(Money amount) throws InsufficientFundsException {
+	public synchronized void makeWithdrawal(Money amount) throws InsufficientFundsException {
 		try {
 			setBalance(balance.minus(amount));
 		} catch (NegativeBalanceException e) {
@@ -67,7 +68,7 @@ public class Account implements Serializable {
 	 * @param balance the new balance of the account
 	 * @throws NegativeBalanceException if the balance is negative
 	 */
-	private void setBalance(Money balance) throws NegativeBalanceException {
+	private synchronized void setBalance(Money balance) throws NegativeBalanceException {
 		if (balance.isLessThan(Money.of(CurrencyUnit.EUR, 0))) throw new NegativeBalanceException("Negative Balance Not Allowed!");
 		this.balance = balance;
 	}

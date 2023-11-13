@@ -37,8 +37,8 @@ public class Transaction {
 	@Override
 	public String toString() {
 		if(amount >= 0)
-			return String.format("a deposit of %f to %d", amount, accountNumber);
+			return String.format("a deposit of %.2f to %d", amount, accountNumber);
 		else
-			return String.format("a withdrawal of %f from %d", amount, accountNumber);
+			return String.format("a withdrawal of %.2f from %d", amount, accountNumber);
 	}
 }
