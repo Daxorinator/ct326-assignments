@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b0d52bb-b084-4497-abed-87d7f9636538" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Bank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/RandomTransactionGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/RandomTransactionGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/TransactionProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/TransactionProcessor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +90,7 @@
       <workItem from="1699632089611" duration="2015000" />
       <workItem from="1699732394003" duration="15651000" />
       <workItem from="1699789754074" duration="18369000" />
-      <workItem from="1699885960633" duration="4174000" />
+      <workItem from="1699885960633" duration="12352000" />
     </task>
     <servers />
   </component>
@@ -103,11 +107,6 @@
           <url>jar://$USER_HOME$/.jdks/temurin-21.0.1/lib/src.zip!/java.base/java/util/concurrent/LinkedBlockingQueue.java</url>
           <line>326</line>
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/RandomTransactionGenerator.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
