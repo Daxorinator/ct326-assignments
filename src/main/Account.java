@@ -45,8 +45,12 @@ public class Account implements Serializable {
 	 * @param amount the amount to deposit
 	 */
 	public synchronized void makeDeposit(Money amount) {
-		if(amount.isGreaterThan(Money.of(CurrencyUnit.EUR, 0)) ) {
-			balance.plus(amount);
+		try {
+			if (amount.isGreaterThan(Money.of(CurrencyUnit.EUR, 0))) {
+				setBalance(balance.plus(amount));
+			}
+		} catch (NegativeBalanceException e) {
+			System.out.println("Achievement Get: How did we get here? Second Edition");
 		}
 	}
 
